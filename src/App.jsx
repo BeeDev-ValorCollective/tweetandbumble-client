@@ -4,17 +4,17 @@ import './App.css'
 import Header from './components/HeaderFooter/Header'
 import Footer from './components/HeaderFooter/Footer'
 
+import Home from './views/Home'
+
 function App() {
 
   return (
     <>
       <BrowserRouter>
-        <header>
           <Header />
-        </header>
         <main>
           <Routes>
-
+            <Route exact path="/" element={<Home />} />
           </Routes>
         </main>
         <footer>
